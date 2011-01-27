@@ -1,0 +1,16 @@
+development:
+  api_key: 9301cc642caf25fd8f2e4193061846f8
+  secret: 583eca1a006215dd211643f97337b096
+
+test:
+  api_key: mykeyzcxvzxcvzxc9v8
+  secret:  mysecretxvxc09vz09
+
+staging:
+  api_key: 9301cc642caf25fd8f2e4193061846f8
+  secret: 583eca1a006215dd211643f97337b096
+
+
+production:
+  api_key: 9301cc642caf25fd8f2e4193061846f8
+  secret: 583eca1a006215dd211643f97337b096

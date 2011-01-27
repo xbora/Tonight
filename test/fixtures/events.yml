@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  event_name: MyString
+  venue_name: MyString
+  event_time: 2011-01-27 11:43:42
+
+two:
+  event_name: MyString
+  venue_name: MyString
+  event_time: 2011-01-27 11:43:42

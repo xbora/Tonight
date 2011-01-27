@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/repo/!svn/ver/3/gigsby_app/vendor/plugins/lastfm
+END
+.DS_Store
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/repo/!svn/ver/3/gigsby_app/vendor/plugins/lastfm/.DS_Store
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/repo/!svn/ver/3/gigsby_app/vendor/plugins/lastfm/Rakefile
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/repo/!svn/ver/3/gigsby_app/vendor/plugins/lastfm/init.rb
+END
+install.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/repo/!svn/ver/3/gigsby_app/vendor/plugins/lastfm/install.rb
+END
+MIT-LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/repo/!svn/ver/3/gigsby_app/vendor/plugins/lastfm/MIT-LICENSE
+END
+uninstall.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/repo/!svn/ver/3/gigsby_app/vendor/plugins/lastfm/uninstall.rb
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/repo/!svn/ver/3/gigsby_app/vendor/plugins/lastfm/README
+END

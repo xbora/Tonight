@@ -1,0 +1,93 @@
+
+
+Processing EventsController#index (for 127.0.0.1 at 2011-01-27 18:00:34) [GET]
+  [4;36;1mEvent Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: events: SELECT * FROM "events" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: events: SELECT * FROM "events" ):
+  app/controllers/events_controller.rb:5:in `index'
+
+Rendered rescues/_trace (35.4ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (14.1ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateEvents (20110127104342)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "event_name" varchar(255), "venue_name" varchar(255), "event_time" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110127104342')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("events")[0m
+
+
+Processing EventsController#index (for 127.0.0.1 at 2011-01-27 18:00:52) [GET]
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering template within layouts/events
+Rendering events/index
+Completed in 127ms (View: 68, DB: 0) | 200 OK [http://localhost/events]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2011-01-27 18:01:31) [GET]
+  [4;35;1mEvent Load (0.3ms)[0m   [0mSELECT * FROM "events" [0m
+Rendering template within layouts/events
+Rendering events/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2011-01-27 18:06:57) [GET]
+
+NoMethodError (undefined method `lastfm_get_geo_events' for #<EventsController:0x1032aa3b0>):
+  app/controllers/events_controller.rb:18:in `index'
+
+Rendered rescues/_trace (29.2ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#index (for 127.0.0.1 at 2011-01-27 18:08:58) [GET]
+
+NoMethodError (undefined method `lastfm_get_geo_events' for #<EventsController:0x1032ae8c0>):
+  app/controllers/events_controller.rb:18:in `index'
+
+Rendered rescues/_trace (29.2ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#index (for 127.0.0.1 at 2011-01-27 18:09:01) [GET]
+
+NoMethodError (undefined method `lastfm_get_geo_events' for #<EventsController:0x10307c2a0>):
+  app/controllers/events_controller.rb:18:in `index'
+
+Rendered rescues/_trace (27.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EventsController#index (for 127.0.0.1 at 2011-01-27 18:09:52) [GET]
+Rendering template within layouts/events
+Rendering events/index
+Completed in 8412ms (View: 23, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing EventsController#index (for 127.0.0.1 at 2011-01-27 18:16:31) [GET]
+Rendering template within layouts/events
+Rendering events/index
+Completed in 8547ms (View: 92, DB: 0) | 200 OK [http://localhost/]

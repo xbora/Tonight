@@ -1,0 +1,25 @@
+<h1>Events Around You in <%= @event_loc %> Over The Next Few Days</h1>
+
+<table cellpadding='5' cellspacing="0">
+    <% @all_events.each do |event| %>
+
+  <tr>
+      <td bgcolor="aliceblue">
+            <a href="<%= event["url"] %>"><img src="<%= event["image"] %>" border="0" /></a>
+      </td>
+  <td bgcolor="aliceblue" width="750">
+      <h3><a href="<%= event["url"] %>"><%= event["title"] %></a> at <a href="<%= event["venue_url"] %>"><%= event["venue"] %><a/></h3>
+          <%  event["bands"].each do |band| %>
+          
+          <%= band %> .
+          
+          <% end %>
+          
+</td>
+<td bgcolor="aliceblue"><h3> in </h3></td>
+<td bgcolor="aliceblue"><h3><%= time_ago_in_words(Time.parse(event["date"].to_s), true) %>.</h3></td>      
+ </tr> 
+ <% end %>
+
+  
+</table>
